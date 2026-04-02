@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl"?>
+
+<!DOCTYPE catalog [
+  <!ELEMENT catalog (book+)>
+  <!ELEMENT book (title, author, genre, price)>
+  <!ATTLIST book id ID #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+
+<catalog>
+  <!-- Fiction -->
+  <book id="b1">
+    <title>Cane‑Flower Letters</title>
+    <author>Kezia Beeharry</author>
+    <genre>Fiction</genre>
+    <price>Rs 420</price>
+  </book>
+
+  <book id="b2">
+    <title>Poudre d’Or Sketches</title>
+    <author>Maïwenn Li‑Kong</author>
+    <genre>Fiction</genre>
+    <price>Rs 390</price>
+  </book>
+
+  <!-- Sci-Fi -->
+  <book id="b3">
+    <title>Lagoon Signal Protocol</title>
+    <author>Eshan Bhugwah</author>
+    <genre>Sci-Fi</genre>
+    <price>Rs 520</price>
+  </book>
+
+  <book id="b4">
+    <title>Basalt Circuit Dreams</title>
+    <author>Zainab Peerun</author>
+    <genre>Sci-Fi</genre>
+    <price>Rs 510</price>
+  </book>
+
+  <!-- Romance -->
+  <book id="b5">
+    <title>After the Curepipe Mist</title>
+    <author>Rafeekah Gopaul</author>
+    <genre>Romance</genre>
+    <price>Rs 365</price>
+  </book>
+
+  <book id="b6">
+    <title>Vanilla‑Tea Vows in Mahébourg</title>
+    <author>Elodie Bunwaree</author>
+    <genre>Romance</genre>
+    <price>Rs 395</price>
+  </book>
+
+  <!-- Academic -->
+  <book id="b7">
+    <title>Exam Season Blueprint</title>
+    <author>Navin Hurreeram</author>
+    <genre>Academic</genre>
+    <price>Rs 890</price>
+  </book>
+
+  <book id="b8">
+    <title>Information Systems, Island-Scale</title>
+    <author>Siyana Goolamallee</author>
+    <genre>Academic</genre>
+    <price>Rs 1150</price>
+  </book>
+
+  <!-- History -->
+  <book id="b9">
+    <title>A Brief History of Quartier Militaire</title>
+    <author>Jules Wong‑Kong</author>
+    <genre>History</genre>
+    <price>Rs 760</price>
+  </book>
+
+  <book id="b10">
+    <title>Trade Winds &amp; Sugar Estates</title>
+    <author>Céline Arouff</author>
+    <genre>History</genre>
+    <price>Rs 840</price>
+  </book>
+
+  <!-- Mystery -->
+  <book id="b11">
+    <title>The Triolet Library Key</title>
+    <author>Darianne Boolell</author>
+    <genre>Mystery</genre>
+    <price>Rs 450</price>
+  </book>
+
+  <book id="b12">
+    <title>Midnight at Camp Diable</title>
+    <author>Nadirah Cadersaib</author>
+    <genre>Mystery</genre>
+    <price>Rs 480</price>
+  </book>
+</catalog>

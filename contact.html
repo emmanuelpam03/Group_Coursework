@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-MU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E.M.C.S Bookshop | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="index.html">E.M.C.S Bookshop</a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero hero-small">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="tagline">
+            Questions, reservations, or recommendations — message us.
+          </p>
+          <p class="live-time">
+            Live date &amp; time: <span id="liveTime">Loading...</span>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Contact Details</h2>
+        <p>We aim to reply to emails within 24 hours.</p>
+
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> +230 5792 4186</li>
+          <li><strong>Email:</strong> rezervasyon@emcsbookshop.mu</li>
+          <li>
+            <strong>Address:</strong> 17, Avenue des Goyaviers, Curepipe,
+            Mauritius
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Opening Hours</h2>
+        <p class="section-note">
+          You can use the button to show/hide the table.
+        </p>
+
+        <div class="button-row">
+          <button class="btn btn-outline" id="toggleHoursBtn" type="button">
+            Show/Hide Opening Hours
+          </button>
+        </div>
+
+        <div class="table-wrap">
+          <table id="hoursTable">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Times</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>09:00 – 18:00</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>09:00 – 18:00</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>09:00 – 18:00</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>09:00 – 19:00</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>09:00 – 19:00</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Full Catalog</h2>
+        <p>
+          Want to browse every book we currently have listed? Open our full
+          catalog page.
+        </p>
+        <a class="btn" href="menu.xml">Open Full Catalog</a>
+      </section>
+    </main>
+
+    <button
+      id="backToTop"
+      class="back-to-top"
+      type="button"
+      title="Back to top"
+    >
+      Back to top
+    </button>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 E.M.C.S Bookshop. Student coursework project.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
