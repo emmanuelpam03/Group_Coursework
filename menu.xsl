@@ -16,6 +16,7 @@
     <html>
       <head>
         <title>E.M.C.S Bookshop | Catalog</title>
+        <link rel="stylesheet" href="style.css" />
         <style>
           body {
             margin: 0;
@@ -23,6 +24,11 @@
             background: #f4f2ee;
             color: #1f2a2a;
             line-height: 1.6;
+          }
+
+          h1,
+          h2 {
+            font-family: Arial, Helvetica, sans-serif;
           }
 
           .container {
@@ -106,6 +112,7 @@
           table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 0;
             background: #ffffff;
             border: 1px solid #eee7df;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -116,13 +123,14 @@
 
           th,
           td {
+            border: none;
             border-bottom: 1px solid #e8dfd6;
             padding: 12px;
           }
 
           th {
             background: #c96b3b;
-            color: #ffffff;
+            color: #000000;
           }
 
           tbody tr:nth-child(even) {

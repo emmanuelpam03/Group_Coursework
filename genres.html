@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E.M.C.S Bookshop | Genres</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f2ee;
+        color: #1f2a2a;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      a {
+        color: #c96b3b;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -28,8 +60,18 @@
           <p class="tagline">
             Not sure what to read? Try a genre you’ve not tried before.
           </p>
-          <p class="live-time">
-            Live date &amp; time: <span id="liveTime">Loading...</span>
+          <p
+            class="live-time"
+            style="
+              margin: 14px 0 0;
+              padding: 10px 14px;
+              border-radius: 999px;
+              background: rgba(255, 255, 255, 0.65);
+              font-size: 14px;
+            "
+          >
+            Live date &amp; time:
+            <span id="liveTime">Loading...</span>
           </p>
         </div>
       </div>
