@@ -5,11 +5,6 @@
   <!--
     XSLT file (menu.xsl)
     This transforms menu.xml (book catalog) into a readable webpage.
-
-    Key things shown here:
-    - A LOOP using xsl:for-each select="catalog/book"
-    - value-of to extract values like title/author/genre/price
-    - A simple HTML LIST of genres
   -->
 
   <xsl:template match="/">
@@ -177,7 +172,7 @@
           <div class="genre-box">
             <h2>Genres in This Catalog</h2>
             <p style="margin: 0 0 10px;">
-              This list is built using a simple loop. (Books are grouped by
+              (Books are grouped by
               genre in the catalog.)
             </p>
 
@@ -213,7 +208,7 @@
                 value-of extracts the text from the elements (title, author,
                 genre, price).
               -->
-              <!-- OPTIONAL EXTRA: sort the output by genre then title -->
+              <!-- sort the output by genre then title -->
               <xsl:for-each select="catalog/book">
                 <xsl:sort select="genre" />
                 <xsl:sort select="title" />
