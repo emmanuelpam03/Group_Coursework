@@ -13,11 +13,17 @@ body {
   background: #f4f2ee;
   color: #1f2a2a;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.35px;
 }
 
 a {
@@ -62,6 +68,7 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
   color: #1f2a2a;
+  letter-spacing: 0.3px;
 }
 
 .nav-links {
@@ -80,6 +87,8 @@ a:hover {
   border-radius: 10px;
   text-decoration: none;
   color: #1f2a2a;
+  font-weight: 600;
+  letter-spacing: 0.2px;
   transition:
     background 0.2s ease,
     color 0.2s ease;
@@ -92,6 +101,12 @@ a:hover {
 .nav-links a.active {
   background: #1f2a2a;
   color: #ffffff;
+  font-weight: 700;
+}
+
+.top-links a {
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 /* HERO */
@@ -120,6 +135,7 @@ a:hover {
   margin: 12px auto 22px;
   font-size: 18px;
   color: #3a4a4a;
+  letter-spacing: 0.15px;
 }
 
 .hero-actions {
@@ -167,11 +183,14 @@ a:hover {
 
 .card h2 {
   margin-top: 0;
+  font-size: 24px;
+  letter-spacing: 0.2px;
 }
 
 .section-note {
   margin-top: 6px;
   color: #4b5a5a;
+  letter-spacing: 0.1px;
 }
 
 /* MENU PREVIEW LIST */
