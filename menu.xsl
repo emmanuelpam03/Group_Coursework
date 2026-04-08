@@ -26,7 +26,7 @@
             font-family: Arial, Helvetica, sans-serif;
           }
 
-          .container {
+          .catalog-container {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 16px;
@@ -42,44 +42,7 @@
             color: #4b5a5a;
           }
 
-          .topbar {
-            background: rgba(255, 255, 255, 0.85);
-            border: 1px solid #eee7df;
-            border-radius: 14px;
-            padding: 10px 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 18px;
-            text-align: left;
-          }
-
-          .topbar .brand {
-            font-weight: bold;
-            color: #1f2a2a;
-            text-decoration: none;
-            white-space: nowrap;
-          }
-
-          .top-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            justify-content: flex-end;
-          }
-
-          .top-links a {
-            color: #1f2a2a;
-            text-decoration: none;
-            padding: 8px 10px;
-            border-radius: 10px;
-          }
-
-          .top-links a:hover {
-            background: #f1e6db;
-          }
+          /* Navbar styles come from style.css (same as the other pages). */
 
           .genre-box {
             background: #ffffff;
@@ -154,17 +117,23 @@
       </head>
 
       <body>
-        <div class="container">
-          <div class="topbar">
-            <a class="brand" href="index.html">E.M.C.S Bookshop</a>
-            <div class="top-links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="books.html">Books</a>
-              <a href="genres.html">Genres</a>
-              <a href="contact.html">Contact</a>
-            </div>
+        <header class="site-header">
+          <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+              <a class="brand" href="index.html">E.M.C.S Bookshop</a>
+
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="books.html">Books</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
           </div>
+        </header>
+
+        <main class="catalog-container">
 
           <h1>Book Catalog</h1>
           <p>E.M.C.S Bookshop — browse our current book list.</p>
@@ -222,7 +191,7 @@
           </table>
 
           <a class="back-link" href="index.html">Back to Home</a>
-        </div>
+        </main>
       </body>
     </html>
   </xsl:template>
