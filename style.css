@@ -36,8 +36,18 @@ a:hover {
 
 /* HEADER + NAVIGATION */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: #ffffff;
   border-bottom: 1px solid #eadfd6;
+}
+
+/* Sticky navbar for the XML catalog page (menu.xml via menu.xsl) */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav {
