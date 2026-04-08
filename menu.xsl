@@ -201,7 +201,6 @@
             </thead>
             <tbody>
               <!--
-                REQUIRED LOOP:
                 This for-each goes through every book in the XML catalog.
                 Each book becomes one table row.
 
